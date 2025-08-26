@@ -32,7 +32,7 @@ function TaskList() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/tasks/${id}`);
+      await axios.delete(`https://task-manager1-nf7h.onrender.com/${id}`);
       setTasks(tasks.filter((task) => task.id !== id));
     } catch (error) {
       console.error("Error deleting task:", error);
