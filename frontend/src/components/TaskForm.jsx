@@ -31,12 +31,12 @@ function TaskForm({ task, onSave }) {
       if (task) {
         // If task exists, update the task
         response = await axios.put(
-          `http://localhost:5000/tasks/${task.id}`,
+          `https://task-manager1-nf7h.onrender.com/${task.id}`,
           newTask
         );
       } else {
         // If it's a new task, create it
-        response = await axios.post("http://localhost:5000/tasks", newTask);
+        response = await axios.post("https://task-manager1-nf7h.onrender.com", newTask);
       }
 
       // Only call onSave after successfully adding/updating the task
