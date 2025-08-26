@@ -24,7 +24,7 @@ cd frontend
 Install the dependencies:
 Run the development server:
 npm start
-This will start the React app on http://localhost:5173.
+This will start the React app on This will start the React app on http://localhost:517](https://task-manager1-seven.vercel.app/
 
 Backend Setup (Express)
 In the root directory of the project (where server.js is located), install the backend dependencies:
